@@ -1,0 +1,13 @@
+node_modules
+.idea
+.package-lock.json
+
+# build
+
+
+#Secret
+.env
+
+npm-debug.log*
+yarn-dubug.log*
+yarn-error.log*
