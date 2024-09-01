@@ -17,6 +17,7 @@
     "sass-loader": "^12.6.0"
   },
   "dependencies": {
+    "boxicons": "^2.1.4",
     "husky": "^9.1.5"
   }
 }
