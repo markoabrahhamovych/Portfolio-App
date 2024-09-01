@@ -1,3 +1,15 @@
-body {
-  background: black;
+@import "_variables.scss";
+@import "fonts";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  font-family: $basic-font;
 }
+
+
+
+@import "layout/index";
