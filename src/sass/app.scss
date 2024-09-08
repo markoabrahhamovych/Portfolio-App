@@ -1,5 +1,5 @@
 @import "_variables.scss";
-@import "fonts";
+@import "_fonts";
 
 * {
   margin: 0;
@@ -10,6 +10,8 @@
   font-family: $basic-font;
 }
 
+a {
+  text-decoration: none;
+}
 
-
-@import "layout/index";
+@import "index";
