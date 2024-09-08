@@ -1,0 +1,33 @@
+.services-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+
+  .services-content {
+    flex: 1 1 10rem;
+    border: $border;
+    border-radius: 0.5rem;
+    padding: 0.8rem 0.5rem 1.1rem;
+    text-align: center;
+    transition: 0.3s ease;
+
+    &:hover {
+      box-shadow: $box-shadow;
+    }
+
+    i {
+      font-size: 2.5rem;
+      color: $main-color;
+    }
+    h3 {
+      font-size: 1.1rem;
+    }
+    p {
+      margin: 0.2rem 0 0.8rem;
+    }
+    .btn {
+      width: 8rem;
+      height: 2.5rem;
+    }
+  }
+}
