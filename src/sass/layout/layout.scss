@@ -1,0 +1,37 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: $bg-color;
+  color: $text-color;
+}
+
+.wrapper {
+  position: relative;
+  width: 66rem;
+  height: 45rem;
+  padding: $page-paddings;
+}
+
+.cover {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: $cover-color;
+  box-shadow: $box-shadow;
+  border-top-left-radius: $basic-border-radius;
+  border-bottom-left-radius: $basic-border-radius;
+  transform-origin: right;
+}
+
+.cover {
+  &-right.turn {
+    transform: rotateY(180deg);
+  }
+  &-left {
+    z-index: -1;
+  }
+}
