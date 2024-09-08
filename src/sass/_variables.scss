@@ -5,7 +5,7 @@ $bg-color: #081b29;
 $main-color: #00abf0;
 $text-color: #333;
 $second-text-color: #555;
-$white-color: #555;
+$white-color: #ffff;
 $cover-color: linear-gradient(45deg , #00abf0 , #006e9a);
 $pages-color: linear-gradient(90deg , #fff , #ddd);
 
@@ -22,3 +22,20 @@ $basic-font: 'Poppins' , sans-serif;
 //Border-Radius
 
 $basic-border-radius: .6rem;
+$button-border-radius: .3rem;
+$half-border-radius: 50%;
+$full-border-radius: 100%;
+
+// Padding
+$page-paddings: 2rem;
+
+//Font Sizes
+
+$h1-font-size: 2.7rem;
+$h3-font-size: 1.5rem;
+$button-font-size: 1rem;
+
+
+//Transition
+
+$general-transition: 0.5s;
