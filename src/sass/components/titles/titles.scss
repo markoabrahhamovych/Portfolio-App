@@ -38,23 +38,3 @@
   left: 50%;
   transform: translateX(-50%);
 }
-
-
-.next-prev-btn {
-  position: absolute;
-  width: 2rem;
-  height: 2rem;
-  bottom: .9rem;
-  right: 1.5rem;
-  color: $second-text-color;
-  cursor: pointer;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 2rem;
-  transition: $general-transition;
-}
-
-.next-prev-btn.back {
-  left: 1.5rem;
-}
