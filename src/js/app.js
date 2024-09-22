@@ -21,26 +21,26 @@ const pageTurnBtn = document.querySelectorAll(".next-prev-btn");
     }
   };
 });
-
 // contact me button when click
 
 const pages = document.querySelectorAll(".book-page.page-right");
 const contactMeBtn = document.querySelector(".btn.contact-me");
 
-contactMeBtn.onclick = () => {
-  (pages || []).forEach((page, index) => {
-    setTimeout(
-      () => {
-        page.classList.add("turn");
+if (contactMeBtn?.length)
+  contactMeBtn.onclick = () => {
+    (pages || []).forEach((page, index) => {
+      setTimeout(
+        () => {
+          page.classList.add("turn");
 
-        setTimeout(() => {
-          page.style.zIndex = 20 + index;
-        }, 500);
-      },
-      (index + 1) * 200 + 100,
-    );
-  });
-};
+          setTimeout(() => {
+            page.style.zIndex = 20 + index;
+          }, 500);
+        },
+        (index + 1) * 200 + 100,
+      );
+    });
+  };
 
 // create reverse index function
 
@@ -57,21 +57,22 @@ function reverseIndex() {
 //back profile button when click
 
 const backProfileBtn = document.querySelector(".back-profile");
-backProfileBtn.onclick = () => {
-  pages.forEach((e, index) => {
-    setTimeout(
-      () => {
-        reverseIndex();
-        pages[pageNumber].classList.remove("turn");
+if (backProfileBtn?.length)
+  backProfileBtn.onclick = () => {
+    pages.forEach((e, index) => {
+      setTimeout(
+        () => {
+          reverseIndex();
+          pages[pageNumber].classList.remove("turn");
 
-        setTimeout(() => {
-          pages[pageNumber].style.zIndex = 10 + index;
-        }, 500);
-      },
-      (index + 1) * 200 + 100,
-    );
-  });
-};
+          setTimeout(() => {
+            pages[pageNumber].style.zIndex = 10 + index;
+          }, 200);
+        },
+        (index + 1) * 200 + 100,
+      );
+    });
+  };
 
 //opening animation
 const coverRight = document.querySelector(".cover.cover-right");
@@ -100,8 +101,8 @@ setTimeout(() => {
       pages[pageNumber].classList.remove("turn");
 
       setTimeout(() => {
-        pages[pageNumber].style.zIndex = 10 + index;
-      }, 500);
+        pages[pageNumber].style.zIndex = 20 + index;
+      }, 200);
     },
     (index + 1) * 200 + 2100,
   );

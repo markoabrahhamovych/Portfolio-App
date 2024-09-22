@@ -3,35 +3,6 @@
   margin-bottom: 1rem;
 }
 
-.worked-box {
-  border-left: $border;
-  .worked-content {
-    position: relative;
-    padding-left: 1.5rem;
-    margin-bottom: 1.2rem;
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: -0.65rem;
-      width: 1.2rem;
-      height: 1.2rem;
-      background-color: $main-color;
-      border-radius: 50%;
-    }
-  }
-}
-
-.worked-content {
-  .year {
-    color: $main-color;
-  }
-
-  i {
-    margin-right: 0.4rem;
-  }
-}
-
 .number-page {
   position: absolute;
   bottom: 1.2rem;

@@ -271,32 +271,6 @@ body {
   margin-bottom: 1rem;
 }
 
-.worked-box {
-  border-left: 0.125rem solid #00abf0;
-}
-.worked-box .worked-content {
-  position: relative;
-  padding-left: 1.5rem;
-  margin-bottom: 1.2rem;
-}
-.worked-box .worked-content::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -0.65rem;
-  width: 1.2rem;
-  height: 1.2rem;
-  background-color: #00abf0;
-  border-radius: 50%;
-}
-
-.worked-content .year {
-  color: #00abf0;
-}
-.worked-content i {
-  margin-right: 0.4rem;
-}
-
 .number-page {
   position: absolute;
   bottom: 1.2rem;
@@ -445,4 +419,36 @@ body {
 }
 .contact-box .btn {
   cursor: pointer;
+}
+
+.worked-box {
+  border-left: 0.125rem solid #00abf0;
+}
+.worked-box .worked-content {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 1.2rem;
+}
+.worked-box .worked-content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -0.65rem;
+  width: 1.2rem;
+  height: 1.2rem;
+  background-color: #00abf0;
+  border-radius: 50%;
+}
+.worked-box .worked-content-stack {
+  padding-top: 10px;
+}
+.worked-box .worked-content-stack span {
+  font-weight: 600;
+}
+
+.worked-content .year {
+  color: #00abf0;
+}
+.worked-content i {
+  margin-right: 0.4rem;
 }

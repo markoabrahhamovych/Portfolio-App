@@ -27,12 +27,11 @@ var pageTurnBtn = document.querySelectorAll(".next-prev-btn");
     }
   };
 });
-
 // contact me button when click
 
 var pages = document.querySelectorAll(".book-page.page-right");
 var contactMeBtn = document.querySelector(".btn.contact-me");
-contactMeBtn.onclick = function () {
+if (contactMeBtn !== null && contactMeBtn !== void 0 && contactMeBtn.length) contactMeBtn.onclick = function () {
   (pages || []).forEach(function (page, index) {
     setTimeout(function () {
       page.classList.add("turn");
@@ -57,14 +56,14 @@ function reverseIndex() {
 //back profile button when click
 
 var backProfileBtn = document.querySelector(".back-profile");
-backProfileBtn.onclick = function () {
+if (backProfileBtn !== null && backProfileBtn !== void 0 && backProfileBtn.length) backProfileBtn.onclick = function () {
   pages.forEach(function (e, index) {
     setTimeout(function () {
       reverseIndex();
       pages[pageNumber].classList.remove("turn");
       setTimeout(function () {
         pages[pageNumber].style.zIndex = 10 + index;
-      }, 500);
+      }, 200);
     }, (index + 1) * 200 + 100);
   });
 };
@@ -93,8 +92,8 @@ setTimeout(function () {
     reverseIndex();
     pages[pageNumber].classList.remove("turn");
     setTimeout(function () {
-      pages[pageNumber].style.zIndex = 10 + index;
-    }, 500);
+      pages[pageNumber].style.zIndex = 20 + index;
+    }, 200);
   }, (index + 1) * 200 + 2100);
 });
 
